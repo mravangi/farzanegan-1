@@ -9,7 +9,7 @@ require('dotenv').config()
 async function server() {
 
 
-  const port = process.env.PORT || 4534;
+  const port = process.env.PORT || 8080;
 
   await apollo.start();
   apollo.applyMiddleware({app , path: '/api'});
