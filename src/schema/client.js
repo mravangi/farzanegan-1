@@ -1,10 +1,11 @@
 module.exports = `
     type Query {
-        test: Test!
+        test: [Test]!
     }
 
     type Test {
-        key : String
+        id: Int
+        title: String
     }
 
     type Client {
