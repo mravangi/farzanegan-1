@@ -3,6 +3,10 @@ module.exports = `
         test: [Test]!
     }
 
+    type Mutation {
+        register(input: userIntput): Boolean
+    }
+
     type Test {
         id: Int
         title: String
@@ -16,5 +20,12 @@ module.exports = `
         mobile: String!
         gender: String!
         image: String
+    }
+
+    input userIntput {
+        fname: String!
+        lname: String!
+        mobile: String!
+        nationalCode: String!
     }
 `;
